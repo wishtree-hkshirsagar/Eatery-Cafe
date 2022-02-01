@@ -14,12 +14,17 @@
 
 
 /*=====================================
-                Html, Body
+             Html, Body, Generic
 =======================================*/
 
 html,
 body {
     font-family: 'Raleway', sans-serif;
+    height: 100%;
+}
+
+body {
+    color: var(--charcoal);
 }
 
 h1,
@@ -29,6 +34,28 @@ h4,
 h5,
 h6 {
     font-weight: bold;
+}
+
+section {
+    background: var(--white);
+    overflow: hidden;
+}
+
+.btnGeneral {
+    border-radius: 28px;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    -ms-border-radius: 28px;
+    -o-border-radius: 28px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0 6px;
+    padding: 12px 46px 12px 46px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
 }
 
 
@@ -68,4 +95,81 @@ h6 {
     top: 50%;
     margin-top: -100px;
     margin-left: -100px;
+}
+
+
+/*=====================================
+                Home Section
+=======================================*/
+
+#home {
+    background: none;
+    height: 100%;
+}
+
+#homeBackgroundVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background: url('../video/food.jpg') no-repeat;
+    background-size: cover;
+}
+
+#homeOverlay {
+    background-color: var(--black);
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#homeContent {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#homeContentInner {
+    display: table-cell;
+    vertical-align: middle;
+    margin-left: 25px;
+    padding-left: 100px;
+}
+
+#homeHeading {
+    color: var(--white);
+    font-size: 65px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 0;
+    display: inline-block;
+}
+
+#homeHeadingOne {
+    color: var(--persianRed);
+}
+
+.btnHome {
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.btnHome:hover,
+.btnHome:focus {
+    color: var(--white);
+    background-color: var(--persianRed);
+    border: 1px solid var(--persianRed);
 }

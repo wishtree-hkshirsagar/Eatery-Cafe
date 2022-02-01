@@ -1,0 +1,44 @@
+/*=====================================
+    Default Theme:
+    -----------------------------------
+    Fonts: 
+        Main Font:       Raleway
+        Fallback Font:   Sans Serif
+    -----------------------------------
+    Colors:
+        Persian Red:     #CE3232
+        Charcoal:        #454545
+        White:           #FFFFFF
+        Black:           #000000
+=======================================*/
+
+
+/*=====================================
+                Html, Body
+=======================================*/
+
+html,
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+
+/*=====================================
+                Colors
+=======================================*/
+
+:root {
+    --persianRed: #CE3232;
+    --charcoal: #454545;
+    --white: #FFFFFF;
+    --black: #000000;
+}

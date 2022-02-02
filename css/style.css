@@ -48,6 +48,9 @@ section {
              Utilities
 =======================================*/
 
+
+/* button */
+
 .btnGeneral {
     border-radius: 28px;
     -webkit-border-radius: 28px;
@@ -65,9 +68,26 @@ section {
     -o-transition: all .5s;
 }
 
+
+/* social icon */
+
 .socialIcon {
     padding: 0;
     margin: 0;
+}
+
+
+/* slider buttons */
+
+.owl-theme .owl-nav [class*=owl-] {
+    color: var(--black) !important;
+    font-size: 40px !important;
+    background: none !important;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none !important;
+    color: var(--black);
 }
 
 
@@ -408,6 +428,7 @@ section {
 
 .menuBox {
     padding: 60px 0;
+    padding-bottom: 160px;
 }
 
 .menuTitle {
@@ -495,4 +516,83 @@ section {
 .menu:hover .menuInfo {
     background-color: var(--black);
     opacity: 0.8;
+}
+
+
+/*=====================================
+            Testimonial Section
+=======================================*/
+
+#testimonial {
+    background-color: var(--grayTwo);
+    overflow: visible;
+}
+
+.testimonialBox {
+    padding: 60px 0;
+}
+
+.testimonialTitle {
+    padding-bottom: 40px;
+}
+
+.testimonialTitle h4 {
+    color: var(--grayOne);
+}
+
+.testimonialInfo {
+    padding: 80px 0;
+    margin-bottom: 50px;
+}
+
+.testimonialInfo span {
+    color: var(--persianRed);
+}
+
+#testimonialSlider {
+    background-color: var(--persianRed);
+    top: -120px;
+}
+
+.testimonial .row {
+    margin-bottom: 25px;
+}
+
+.testimonial {
+    padding: 20px 45px 0 45px;
+    color: var(--white);
+}
+
+.testimonial h3 {
+    font-size: 32px;
+    line-height: 35px;
+}
+
+.testimonial .stars {
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+}
+
+.testimonial p {
+    line-height: normal;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    word-spacing: 5px;
+}
+
+.author .authorInfo {
+    width: 250px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.author .authorInfo p {
+    margin: 0;
+}
+
+.author .authorInfo p:first-child {
+    font-weight: bold;
+    font-size: 18px;
 }

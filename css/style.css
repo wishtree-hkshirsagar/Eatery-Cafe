@@ -8,6 +8,7 @@
     Colors:
         Persian Red:     #CE3232
         Charcoal:        #454545
+        Light Gray:      #BFBDBD
         White:           #FFFFFF
         Black:           #000000
 =======================================*/
@@ -66,6 +67,7 @@ section {
 :root {
     --persianRed: #CE3232;
     --charcoal: #454545;
+    --lightGray: #BFBDBD;
     --white: #FFFFFF;
     --black: #000000;
 }
@@ -172,4 +174,29 @@ section {
     color: var(--white);
     background-color: var(--persianRed);
     border: 1px solid var(--persianRed);
+}
+
+
+/*=====================================
+                About Section
+=======================================*/
+
+.aboutBox {
+    padding: 60px 0;
+}
+
+.aboutInfoTitle h4 {
+    color: var(--lightGray);
+}
+
+.aboutInfoTitle h2 span {
+    color: var(--persianRed);
+}
+
+.aboutImage {
+    padding: 25px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
 }

@@ -246,8 +246,13 @@ section {
                 About Section
 =======================================*/
 
+#about {
+    height: 100%;
+}
+
 .aboutBox {
     padding: 60px 0;
+    padding-top: 125px;
 }
 
 .aboutInfoTitle h4 {

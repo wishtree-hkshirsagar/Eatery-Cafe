@@ -49,10 +49,10 @@ $(function() {
 
             // Add logo styling
             $(".navbar-brand img").css({
-                'width': '130px',
+                'width': '135px',
                 'position': 'relative',
-                'top': '-10px',
-                'left': '-23px'
+                'top': '-12px',
+                'left': '-18px'
             });
 
             //Show back to top button

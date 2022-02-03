@@ -10,6 +10,7 @@
         Charcoal:        #454545
         Gray One:        #BFBDBD
         Gray Two:        #F9F9F9
+        Gray Three:      #212226
         White:           #FFFFFF
         Black:           #000000
 =======================================*/
@@ -100,6 +101,7 @@ section {
     --charcoal: #454545;
     --grayOne: #BFBDBD;
     --grayTwo: #F9F9F9;
+    --grayThree: #212226;
     --white: #FFFFFF;
     --black: #000000;
 }
@@ -116,7 +118,6 @@ section {
 }
 
 .socialIcon li a {
-    border-radius: 100px;
     color: var(--persianRed);
     font-size: 15px;
     width: 35px;
@@ -130,6 +131,11 @@ section {
     -moz-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
 }
 
 .socialIcon li a:hover {
@@ -162,6 +168,72 @@ section {
     top: 50%;
     margin-top: -100px;
     margin-left: -100px;
+}
+
+
+/*=====================================
+            Header Section
+=======================================*/
+
+.navbar {
+    padding: 35px 0 20px 0;
+    transition: all 300ms linear;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+}
+
+.navbar-brand img {
+    width: 175px;
+    position: relative;
+    top: -20px;
+    left: -23px;
+}
+
+.siteNavWrapper {
+    padding: 0 85px;
+}
+
+ul.navbar-nav>li>a {
+    color: var(--white);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+ul.navbar-nav>li>a:hover,
+ul.navbar-nav>li>a:focus {
+    background: none;
+    color: var(--persianRed);
+    font-weight: bold;
+}
+
+
+/* white navigation bar */
+
+.whiteNavTop {
+    background-color: var(--white);
+    padding: 10px 0;
+    box-shadow: 0 9px 5px -9px var(--grayOne);
+    z-index: 2;
+}
+
+.whiteNavTop ul.navbar-nav>li>a {
+    color: var(--grayThree);
+}
+
+.whiteNavTop ul.navbar-nav>li>a:hover,
+.whiteNavTop ul.navbar-nav>li>a:focus {
+    color: var(--persianRed);
+}
+
+
+/* Scroll spy active state */
+
+.whiteNavTop ul.navbar-nav>li.active>a {
+    color: var(--persianRed);
+    font-weight: bold;
 }
 
 
@@ -365,13 +437,17 @@ section {
 
 .team .socialIcon li a {
     background: var(--black);
-    border-radius: 100%;
     width: 50px;
     height: 50px;
     line-height: 50px;
     color: var(--white);
     font-size: 20px;
     margin: 15px 5px 0 5px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
 }
 
 .team .teamItem {
@@ -556,7 +632,6 @@ section {
 
 #testimonialSlider {
     background-color: var(--persianRed);
-    top: -120px;
 }
 
 .testimonial .row {
@@ -619,12 +694,16 @@ section {
     background: transparent;
     border: 0;
     border-bottom: 1px solid var(--grayTwo);
-    border-radius: 0;
     box-shadow: none;
     font-size: 14px;
     font-weight: normal;
     margin-bottom: 15px;
     transition: all ease-in-out 0.4s;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
 }
 
 #contact .form-control:hover,
@@ -638,11 +717,15 @@ section {
 
 #contact button#submit {
     background: var(--persianRed);
-    border-radius: 0;
     border: 0;
     color: var(--white);
     font-weight: bold;
     height: 50px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
 }
 
 #contact button#submit:hover {
@@ -672,7 +755,31 @@ section {
 }
 
 #footerOne {
-    background-color: var(--persianRed);
+    background-color: var(--black);
     color: var(--white);
     padding: 30px;
+}
+
+
+/* back to top button */
+
+#backToTop {
+    padding: 8px 12px;
+    color: var(--white);
+    background-color: var(--persianRed);
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-size: 15px;
+    display: none;
+}
+
+#backToTop:hover {
+    color: var(--white);
+    background-color: var(--black);
 }

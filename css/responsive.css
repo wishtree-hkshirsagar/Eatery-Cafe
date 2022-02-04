@@ -1,0 +1,247 @@
+/*=====================================
+            Mobile Menu
+=======================================*/
+
+.navbar-header {
+    position: relative;
+}
+
+#mobileNavOpenBtn {
+    font-size: 30px;
+    color: var(--persianRed);
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    /* hide mobile nav open button */
+    display: none;
+}
+
+#mobileNav {
+    width: 100%;
+    /* By default, mobile nav will be hidden with the height 0% */
+    height: 0%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: var(--white);
+    opacity: 0.9;
+    transition: all 300ms linear;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    overflow-y: hidden;
+}
+
+#mobileNavCloseBtn {
+    font-size: 70px;
+    color: var(--grayThree);
+    font-weight: 400;
+    cursor: pointer;
+    position: absolute;
+    top: -9px;
+    right: 13px;
+    z-index: 3;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+#mobileNavContent {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    top: 10%;
+}
+
+#mobileNav ul li {
+    margin-bottom: 20px;
+}
+
+#mobileNav a {
+    font-size: 18px;
+    color: var(--grayThree);
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+#mobileNav a:hover,
+#mobileNav a:focus,
+#mobileNavCloseBtn:hover,
+#mobileNavCloseBtn:focus {
+    color: var(--persianRed);
+    font-weight: bold;
+    background: none;
+}
+
+
+/* Mobile Nav Scroll Spy Active State */
+
+.whiteNavTop #mobileNav ul.nav>li.active>a {
+    color: var(--persianRed);
+    font-weight: bold;
+}
+
+
+/*=====================================
+        Bootstrap Media Queries
+=======================================*/
+
+
+/* Large Devices (Desktops & Laptops)*/
+
+@media (min-width: 1200px) and (max-width: 1299px) {
+    /* Navigation Bar */
+    .siteNavWrapper {
+        padding: 0 20px;
+    }
+    .navbar-brand img {
+        left: -8px !important;
+    }
+    /* Home Section */
+    #homeContentInner {
+        padding-left: 50px;
+    }
+    /* Team Section */
+    .teamBox .container .row {
+        margin-left: -52px;
+    }
+    #memberTwo {
+        height: 560px;
+    }
+    /* Section & Footer */
+    section,
+    #footerOne {
+        width: 103%;
+    }
+    .footerBox .container .row {
+        padding-right: 10rem;
+    }
+}
+
+
+/* Medium Devices (Landscape Tablets & Medium Desktops)*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Navigation Bar */
+    .siteNavWrapper {
+        padding: 0;
+    }
+    .navbar-brand img {
+        left: 5px !important;
+    }
+    /* Home Section */
+    #homeContentInner {
+        padding-left: 45px;
+    }
+    /* Team Section */
+    #memberTwo {
+        height: 440px;
+    }
+    /* Footer */
+    .footerBox .container .row {
+        padding-right: 10rem;
+    }
+}
+
+
+/* Small Devices (Portrait Tablets & Small Desktops)*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Navigation Bar */
+    .siteNavWrapper {
+        padding: 0;
+    }
+    .navbar-brand img {
+        left: 16px !important;
+    }
+    .whiteNavTop .navbar-brand img {
+        left: 37px !important;
+    }
+    /* Home Section */
+    #homeContentInner {
+        padding-left: 55px;
+    }
+    /* Team Section */
+    #memberOne {
+        margin-left: 60px;
+    }
+    #memberTwo {
+        width: 84%;
+        margin-left: 60px;
+    }
+    #memberThree {
+        width: 85%;
+        margin-left: 55px;
+    }
+    /* Menu Section */
+    .menu .menuInfo {
+        top: 45%;
+    }
+    /* Footer */
+    .footerBox .container .row {
+        margin-left: -105px;
+    }
+    #contactForm textarea {
+        width: 33rem;
+    }
+}
+
+
+/* Extra Small Devices (Portrait Tablets & Landscape Phones)*/
+
+@media (max-width: 767px) {
+    /* Navigation */
+    .navbar {
+        padding: 20px 0;
+    }
+    .siteNavWrapper,
+    .whiteNavTop {
+        padding: 0;
+    }
+    .navbar-brand img {
+        top: -15px;
+    }
+    /* show mobile nav open button */
+    #mobileNavOpenBtn {
+        display: block;
+    }
+    /* Home Section */
+    #homeContentInner {
+        padding-left: 15px;
+    }
+    #homeHeading h3 {
+        font-size: 20px;
+    }
+    #homeHeading h1 {
+        font-size: 25px;
+    }
+    .btnGeneral {
+        padding: 5px 20px 5px 20px;
+    }
+    /* Team Section */
+    .team {
+        text-align: center;
+    }
+    #memberOne {
+        width: 100%;
+    }
+    #memberTwo {
+        width: 100%;
+    }
+    #memberThree {
+        width: 100%;
+    }
+}

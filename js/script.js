@@ -49,10 +49,10 @@ $(function() {
 
             // Add logo styling
             $(".navbar-brand img").css({
-                'width': '130px',
+                'width': '135px',
                 'position': 'relative',
-                'top': '-10px',
-                'left': '-23px'
+                'top': '-12px',
+                'left': '-18px'
             });
 
             //Show back to top button
@@ -91,5 +91,24 @@ $(function() {
         $("html, body").animate({
             scrollTop: $(sectionId).offset().top - 64
         }, 1250, "easeInOutExpo");
+    });
+});
+
+/*=====================================
+                Mobile Menu
+=======================================*/
+$(function() {
+    // Show mobile navigation
+    $("#mobileNavOpenBtn").click(function() {
+        $("#mobileNav").css({
+            "height": "100%"
+        });
+    });
+
+    // Close mobile navigation
+    $("#mobileNavCloseBtn, #mobileNav a").click(function() {
+        $("#mobileNav").css({
+            "height": "0%"
+        });
     });
 });

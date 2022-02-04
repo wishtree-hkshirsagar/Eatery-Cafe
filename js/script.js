@@ -16,9 +16,8 @@ $(function() {
         smartSpeed: 500,
         loop: true,
         autoplayHoverPause: true,
-        nav: true,
-        dots: false,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+        nav: false,
+        dots: true
     });
 });
 
@@ -42,7 +41,7 @@ $(function() {
 
         if ($(window).scrollTop() > 50) {
             //Show white navigation bar
-            $("nav").addClass("whiteNavTop");
+            $("nav").addClass("white-nav-top");
 
             // Show dark logo
             $(".navbar-brand img").attr("src", "images/logo/logo-dark.png");
@@ -60,7 +59,7 @@ $(function() {
 
         } else {
             //Hide white navigation bar
-            $("nav").removeClass("whiteNavTop");
+            $("nav").removeClass("white-nav-top");
 
             // Show normal logo
             $(".navbar-brand img").attr("src", "images/logo/logo.png");

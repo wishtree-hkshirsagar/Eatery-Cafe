@@ -41,7 +41,10 @@ h6 {
 
 section {
     background: var(--white);
-    overflow: hidden;
+}
+
+main {
+    height: 100%;
 }
 
 
@@ -212,26 +215,26 @@ ul.navbar-nav>li>a:focus {
 
 /* white navigation bar */
 
-.whiteNavTop {
+.white-nav-top {
     background-color: var(--white);
     padding: 10px 0;
     box-shadow: 0 9px 5px -9px var(--grayOne);
     z-index: 2;
 }
 
-.whiteNavTop ul.navbar-nav>li>a {
+.white-nav-top ul.navbar-nav>li>a {
     color: var(--grayThree);
 }
 
-.whiteNavTop ul.navbar-nav>li>a:hover,
-.whiteNavTop ul.navbar-nav>li>a:focus {
+.white-nav-top ul.navbar-nav>li>a:hover,
+.white-nav-top ul.navbar-nav>li>a:focus {
     color: var(--persianRed);
 }
 
 
 /* Scroll spy active state */
 
-.whiteNavTop ul.navbar-nav>li.active>a {
+.white-nav-top ul.navbar-nav>li.active>a {
     color: var(--persianRed);
     font-weight: bold;
 }
@@ -290,15 +293,17 @@ ul.navbar-nav>li>a:focus {
 
 .home-heading {
     color: var(--white);
-    font-size: 65px;
+    font-size: 30px;
     font-weight: bolder;
     text-transform: uppercase;
     margin: 0;
     display: inline-block;
 }
 
-.home-heading h1 {
+.home-heading-two {
     font-size: 25px;
+    max-width: 400px;
+    line-height: 30px;
 }
 
 .home-heading-one {
@@ -323,12 +328,8 @@ ul.navbar-nav>li>a:focus {
 =======================================*/
 
 #about {
-    height: 100%;
-}
-
-.about-box {
     padding: 60px 0;
-    padding-top: 125px;
+    /* padding-top: 125px; */
 }
 
 .about-info-title h4 {
@@ -358,11 +359,13 @@ ul.navbar-nav>li>a:focus {
 
 #team {
     background-color: var(--grayTwo);
-}
-
-.team-box {
     padding: 60px 0;
 }
+
+
+/* .team-box {
+    padding: 60px 0;
+} */
 
 .team-title {
     padding-bottom: 40px;
@@ -478,6 +481,11 @@ ul.navbar-nav>li>a:focus {
                 Menu Section
 =======================================*/
 
+#menu {
+    padding: 60px 0;
+    /* padding-bottom: 270px; */
+}
+
 #menu .container {
     width: 100%;
 }
@@ -511,10 +519,11 @@ ul.navbar-nav>li>a:focus {
     width: 102%;
 }
 
-.menu-box {
+
+/* .menu-box {
     padding: 60px 0;
     padding-bottom: 270px;
-}
+} */
 
 .menu-title {
     padding-bottom: 40px;
@@ -611,11 +620,13 @@ ul.navbar-nav>li>a:focus {
 #testimonial {
     background-color: var(--grayTwo);
     overflow: visible;
-}
-
-.testimonial-box {
     padding: 60px 0;
 }
+
+
+/* .testimonial-box {
+    padding: 60px 0;
+} */
 
 .testimonialTitle {
     padding-bottom: 40px;
@@ -686,7 +697,7 @@ ul.navbar-nav>li>a:focus {
             Contact Section
 =======================================*/
 
-.contact-box {
+#contact {
     padding: 100px 0;
 }
 
@@ -762,10 +773,15 @@ ul.navbar-nav>li>a:focus {
     color: var(--white);
 }
 
-#footer-one {
-    background-color: var(--black);
-    color: var(--white);
+.footer-one {
     padding: 30px;
+    position: relative;
+}
+
+.cafe-address {
+    position: relative;
+    top: 15rem;
+    left: 20rem;
 }
 
 

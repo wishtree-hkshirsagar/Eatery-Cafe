@@ -733,6 +733,10 @@ ul.navbar-nav>li>a:focus {
     color: var(--white);
 }
 
+#googleMap {
+    margin-top: 25px;
+}
+
 #googleMap iframe {
     border: 0;
     width: 100%;

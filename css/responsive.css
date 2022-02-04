@@ -20,7 +20,8 @@
 
 #mobileNav {
     width: 100%;
-    height: 100%;
+    /* By default, mobile nav will be hidden with the height 0% */
+    height: 0%;
     position: fixed;
     top: 0;
     left: 0;
@@ -113,6 +114,13 @@
     #homeContentInner {
         padding-left: 50px;
     }
+    /* Team Section */
+    .teamBox .container .row {
+        margin-left: -52px;
+    }
+    #memberTwo {
+        height: 560px;
+    }
     /* Section & Footer */
     section,
     #footerOne {
@@ -186,6 +194,9 @@
     .footerBox .container .row {
         margin-left: -105px;
     }
+    #contactForm textarea {
+        width: 33rem;
+    }
 }
 
 
@@ -200,8 +211,37 @@
     .whiteNavTop {
         padding: 0;
     }
+    .navbar-brand img {
+        top: -15px;
+    }
     /* show mobile nav open button */
     #mobileNavOpenBtn {
         display: block;
+    }
+    /* Home Section */
+    #homeContentInner {
+        padding-left: 15px;
+    }
+    #homeHeading h3 {
+        font-size: 20px;
+    }
+    #homeHeading h1 {
+        font-size: 25px;
+    }
+    .btnGeneral {
+        padding: 5px 20px 5px 20px;
+    }
+    /* Team Section */
+    .team {
+        text-align: center;
+    }
+    #memberOne {
+        width: 100%;
+    }
+    #memberTwo {
+        width: 100%;
+    }
+    #memberThree {
+        width: 100%;
     }
 }

@@ -6,7 +6,7 @@
     position: relative;
 }
 
-#mobileNavOpenBtn {
+#mobile-nav-open-btn {
     font-size: 30px;
     color: var(--persianRed);
     cursor: pointer;
@@ -18,7 +18,7 @@
     display: none;
 }
 
-#mobileNav {
+#mobile-nav {
     width: 100%;
     /* By default, mobile nav will be hidden with the height 0% */
     height: 0%;
@@ -36,7 +36,7 @@
     overflow-y: hidden;
 }
 
-#mobileNavCloseBtn {
+#mobile-nav-close-btn {
     font-size: 70px;
     color: var(--grayThree);
     font-weight: 400;
@@ -52,7 +52,7 @@
     -o-transition: .3s;
 }
 
-#mobileNavContent {
+.mobile-nav-content {
     text-align: center;
     width: 100%;
     margin-top: 30px;
@@ -60,11 +60,11 @@
     top: 10%;
 }
 
-#mobileNav ul li {
+#mobile-nav ul li {
     margin-bottom: 20px;
 }
 
-#mobileNav a {
+#mobile-nav a {
     font-size: 18px;
     color: var(--grayThree);
     font-weight: 400;
@@ -77,10 +77,10 @@
     -o-transition: .3s;
 }
 
-#mobileNav a:hover,
-#mobileNav a:focus,
-#mobileNavCloseBtn:hover,
-#mobileNavCloseBtn:focus {
+#mobile-nav a:hover,
+#mobile-nav a:focus,
+#mobile-nav-close-btn:hover,
+#mobile-nav-close-btn:focus {
     color: var(--persianRed);
     font-weight: bold;
     background: none;
@@ -89,7 +89,7 @@
 
 /* Mobile Nav Scroll Spy Active State */
 
-.whiteNavTop #mobileNav ul.nav>li.active>a {
+.whiteNavTop #mobile-nav ul.nav>li.active>a {
     color: var(--persianRed);
     font-weight: bold;
 }
@@ -104,26 +104,26 @@
 
 @media (min-width: 1200px) and (max-width: 1299px) {
     /* Navigation Bar */
-    .siteNavWrapper {
+    .site-nav-wrapper {
         padding: 0 20px;
     }
     .navbar-brand img {
         left: -8px !important;
     }
     /* Home Section */
-    #homeContentInner {
+    .home-content-inner {
         padding-left: 50px;
     }
     /* Team Section */
-    .teamBox .container .row {
+    .team-box .container .row {
         margin-left: -52px;
     }
-    #memberTwo {
+    .member-two {
         height: 560px;
     }
     /* Section & Footer */
     section,
-    #footerOne {
+    #footer-one {
         width: 103%;
     }
     .footerBox .container .row {
@@ -136,18 +136,18 @@
 
 @media (min-width: 992px) and (max-width: 1199px) {
     /* Navigation Bar */
-    .siteNavWrapper {
+    .site-nav-wrapper {
         padding: 0;
     }
     .navbar-brand img {
         left: 5px !important;
     }
     /* Home Section */
-    #homeContentInner {
+    .home-content-inner {
         padding-left: 45px;
     }
     /* Team Section */
-    #memberTwo {
+    .member-two {
         height: 440px;
     }
     /* Footer */
@@ -161,7 +161,7 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
     /* Navigation Bar */
-    .siteNavWrapper {
+    .site-nav-wrapper {
         padding: 0;
     }
     .navbar-brand img {
@@ -171,30 +171,30 @@
         left: 37px !important;
     }
     /* Home Section */
-    #homeContentInner {
+    .home-content-inner {
         padding-left: 55px;
     }
     /* Team Section */
-    #memberOne {
+    .member-one {
         margin-left: 60px;
     }
-    #memberTwo {
+    .member-two {
         width: 84%;
         margin-left: 60px;
     }
-    #memberThree {
+    .member-three {
         width: 85%;
         margin-left: 55px;
     }
     /* Menu Section */
-    .menu .menuInfo {
+    .menu .menu-info {
         top: 45%;
     }
     /* Footer */
     .footerBox .container .row {
         margin-left: -105px;
     }
-    #contactForm textarea {
+    #contact-form textarea {
         width: 33rem;
     }
 }
@@ -207,7 +207,7 @@
     .navbar {
         padding: 20px 0;
     }
-    .siteNavWrapper,
+    .site-nav-wrapper,
     .whiteNavTop {
         padding: 0;
     }
@@ -215,33 +215,30 @@
         top: -15px;
     }
     /* show mobile nav open button */
-    #mobileNavOpenBtn {
+    #mobile-nav-open-btn {
         display: block;
     }
     /* Home Section */
-    #homeContentInner {
+    .home-content-inner {
         padding-left: 15px;
     }
-    #homeHeading h3 {
+    .home-heading h1 {
         font-size: 20px;
     }
-    #homeHeading h1 {
-        font-size: 25px;
-    }
-    .btnGeneral {
+    .btn-general {
         padding: 5px 20px 5px 20px;
     }
     /* Team Section */
     .team {
         text-align: center;
     }
-    #memberOne {
+    .member-one {
         width: 100%;
     }
-    #memberTwo {
+    .member-two {
         width: 100%;
     }
-    #memberThree {
+    .member-three {
         width: 100%;
     }
 }

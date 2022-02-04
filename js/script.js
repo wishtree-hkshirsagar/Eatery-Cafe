@@ -10,7 +10,7 @@ $(window).on('load', function() {
             Testimonial Section
 =======================================*/
 $(function() {
-    $("#testimonialSlider").owlCarousel({
+    $("#testimonial-slider").owlCarousel({
         items: 1,
         autoplay: true,
         smartSpeed: 500,
@@ -82,7 +82,7 @@ $(function() {
 // Smooth scrolling
 
 $(function() {
-    $("a.smoothScroll").click(function(event) {
+    $("a.smooth-scroll").click(function(event) {
         event.preventDefault();
 
         //get section id (ex: #home, #about)
@@ -99,15 +99,15 @@ $(function() {
 =======================================*/
 $(function() {
     // Show mobile navigation
-    $("#mobileNavOpenBtn").click(function() {
-        $("#mobileNav").css({
+    $("#mobile-nav-open-btn").click(function() {
+        $("#mobile-nav").css({
             "height": "100%"
         });
     });
 
     // Close mobile navigation
-    $("#mobileNavCloseBtn, #mobileNav a").click(function() {
-        $("#mobileNav").css({
+    $("#mobile-nav-close-btn, #mobile-nav a").click(function() {
+        $("#mobile-nav").css({
             "height": "0%"
         });
     });

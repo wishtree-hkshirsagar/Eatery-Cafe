@@ -110,6 +110,9 @@
     .navbar-brand img {
         left: -8px !important;
     }
+    .white-nav-top img {
+        left: 12px !important;
+    }
     /* Main Section */
     main {
         width: 106%;
@@ -121,6 +124,9 @@
     /* Team Section */
     .team-box .container .row {
         margin-left: -52px;
+    }
+    #team {
+        padding-bottom: 40px;
     }
 }
 
@@ -134,6 +140,9 @@
     }
     .navbar-brand img {
         left: 5px !important;
+    }
+    .white-nav-top img {
+        left: 28px !important;
     }
     /* Home Section */
     .home-content-inner {
@@ -172,14 +181,15 @@
         width: 128%;
     }
     /* Team Section */
-    .member-one {
-        margin-left: 60px;
-    }
-    .member-two {
+    #member-one {
         width: 84%;
         margin-left: 60px;
     }
-    .member-three {
+    #member-two {
+        width: 84%;
+        margin-left: 60px;
+    }
+    #member-three {
         width: 85%;
         margin-left: 55px;
     }
@@ -187,12 +197,16 @@
     .menu .menu-info {
         top: 45%;
     }
-    /* Footer */
-    .footer-box .container .row {
-        margin-left: -105px;
-    }
+    /* Contact Section */
     #contact-form textarea {
         width: 33rem;
+    }
+    /* Footer */
+    .footer-box .container .row {
+        margin-left: 105px;
+    }
+    .footer-one {
+        margin-left: 25px;
     }
 }
 
@@ -232,7 +246,7 @@
     }
     /* Main Section */
     main {
-        width: 114.5%;
+        width: 102%;
     }
     /* About Section */
     #about {
